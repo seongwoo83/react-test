@@ -16,8 +16,14 @@
 #### Searchable User List
 
 **Require**<br>
+	1.	아래와 같은 유저 목록이 주어진다.<br>
+	2.	사용자는 검색 input에 이름을 입력할 수 있다.<br>
+	3.	입력한 검색어를 기준으로 이름에 검색어가 포함된 유저만 화면에 보여준다.<br>
+	4.	검색어가 비어 있으면 전체 유저 목록을 보여준다.<br>
+	5.	검색 결과가 없으면 "검색 결과가 없습니다." 문구를 보여준다.<br>
+	<br>
 ```javascript
-const initialUsers = [
+const USERS = [
   { id: 1, name: "Alice" },
   { id: 2, name: "Bob" },
   { id: 3, name: "Charlie" },
@@ -25,11 +31,3 @@ const initialUsers = [
   { id: 5, name: "Eve" },
 ];
 ```
-<br>
-1. 검색기능 - name기준 필터링<br>
-2. 삭제기능 - user옆의 삭제 버튼 클릭 시 삭제<br>
-3. 검색결과 미존재 시 - No User Found 출력<br>
-4. 반드시 사용<br>
-	•	useState<br>
-	•	filter<br>
-	•	controlled input<br>
